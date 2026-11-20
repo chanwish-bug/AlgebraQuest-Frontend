@@ -163,6 +163,14 @@ fun LoginScreen(state: UiState, vm: AppViewModel) {
                             fontWeight = FontWeight.Bold,
                             letterSpacing = 1.2.sp,
                         )
+
+                        Text(
+                            "EDUARDO BARUCH HERNANDEZ APARICIO PRUEBA EXAMEN",
+                            color = Aq.Mint,
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold,
+                            letterSpacing = 1.2.sp,
+                        )
                         val healthColor = when (state.serverHealthy) {
                             true -> Aq.Green
                             false -> Aq.Red

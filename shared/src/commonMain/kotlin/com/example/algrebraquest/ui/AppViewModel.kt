@@ -62,15 +62,8 @@ fun rootRouteFor(role: Role): Route = when (role) {
 }
 
 class AppViewModel(private val services: PlatformServices = platformServices()) : ViewModel() {
-<<<<<<< main
-    // Ignora URLs locales guardadas de pruebas anteriores (localhost, 10.0.2.2, IP de red local)
-    private var serverUrl: String = services.secure.serverUrl
-        ?.takeIf { it.startsWith("https://") }
-        ?: services.defaultServerUrl
-=======
     // Servidor fijo: Railway. Se ignora cualquier URL guardada o local.
     private var serverUrl: String = com.example.algrebraquest.data.RAILWAY_BASE_URL
->>>>>>> documentacion-arquitectura
     private val api = ApiClient { serverUrl }
 
     private val _state = MutableStateFlow(UiState(serverUrl = serverUrl))
