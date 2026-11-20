@@ -19,7 +19,7 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.serialization.json.Json
 
 /** URL de producción en Railway */
-const val RAILWAY_BASE_URL = "https://algebraquest-backend-production.up.railway.app"
+const val RAILWAY_BASE_URL = "algebraquest-backend-production-36f5ef0a.up.railway.app"
 
 /** Error de red (status = 0) o respuesta no exitosa del backend Ktor. */
 class ApiFailure(val status: Int, message: String) : Exception(message) {
